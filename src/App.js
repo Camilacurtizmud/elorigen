@@ -4,7 +4,8 @@ import { brown } from '@mui/material/colors';
 import './App.css';
 import Catalogo from './components/catalogo/catalogo';
 import NavBar from './components/navbar/navbar';
-  
+import ItemListContainer from './components/catalogo/ItemListContainer';
+
 const theme = createMuiTheme({
   palette: {
     primary: {
@@ -21,9 +22,9 @@ function App() {
     <ThemeProvider theme={theme}>
     <div className="App">
       <NavBar/>
-      <Catalogo />
+        <Catalogo />
+        <ItemListContainer greeting="Bienvenido" />
       </div>
-
       </ThemeProvider>
   );
 }

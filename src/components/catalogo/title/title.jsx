@@ -1,7 +1,7 @@
 const TitleComponent = ({ name }) => {
     return (
         <div>
-            <h1>Hola {name}</h1>
+            <h1>{name}</h1>
         </div>
     );
 }
