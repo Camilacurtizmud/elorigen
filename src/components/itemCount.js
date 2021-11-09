@@ -25,7 +25,7 @@ const ItemCount = ({ stock, initial }) => {
         <>
             <h1> Stock Carrito </h1>
             <div>
-                <button OnClick={addItem}>+</button>
+                <button onClick={addItem}>+</button>
                 <h3>{count}</h3>
                 <button onClick={quitItem}>-</button>
             </div>
