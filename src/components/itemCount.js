@@ -6,14 +6,14 @@ const ItemCount = ({ stock, initial }) => {
 
     const addItem = () => {
         const newValue = count + 1;
-        if (newValue < stock) {
+        if (newValue <= stock) {
             setCount(newValue);
         }
     };
 
     const quitItem = () => {
         const newValue = count - 1;
-        if (newValue > initial) {
+        if (newValue => initial) {
             setCount(newValue);
         }
     };
